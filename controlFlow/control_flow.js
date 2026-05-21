@@ -52,3 +52,21 @@ let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticate
 
 console.log("Authentication Status:", authenticationStatus);
 
+let authorization_based_code ;
+let person = "Enrolled Member";
+
+if ( person == "Employee" )
+{
+authorization_based_code = "Dietary Services";
+}
+else if ( person == "Enrolled Member"){
+    authorization_based_code = "Dietary Services one-on-one interaction with a dietician";
+}
+else if(person == "Subscriber"){
+    authorization_based_code = "Dietary Services";
+}
+else if( person == "Non-Subscriber"){
+    authorization_based_code = "need to enroll or at least subscribe first to avail this facility";
+}
+
+console.log( " you are a "+ person + " you are eligible to "+ authorization_based_code);
