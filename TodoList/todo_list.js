@@ -35,3 +35,11 @@ function clearCompletedTasks() {
     }
 addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
+
+function clearAllTasks(){
+    tasks = [];
+    displayTasks()
+}
+
+const clearAllTasksBtn = document.getElementById("clearAllTasksBtn");
+clearAllTasksBtn.addEventListener("click", clearAllTasks);
